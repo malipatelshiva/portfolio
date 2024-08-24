@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .desktopMenu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .desktopMenuListItem {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .desktopMenuListItem:hover {
+    color: #ddd;
+  }
+  
+  .desktopMenuBtn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .desktopMenuBtn:hover {
+    background-color: #ddd;
+  }
+  
+  .desktopMenuImg {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .mobMenu {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu */
+  .navMenu {
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+  
+  .ListItem {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .ListItem:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .desktopMenu {
+      display: none;
+    }
+  
+    .mobMenu {
+      display: block;
+    }
+  
+    .navMenu {
+      display: flex;
+    }
+  }
+  
